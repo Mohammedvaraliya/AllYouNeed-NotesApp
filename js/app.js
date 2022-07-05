@@ -61,9 +61,9 @@ function showNotes() {
         <div class="noteCard card text-bg-dark mb-3" title="Click to edit" data-key="${
           element.date
         }">
-                <div class="card-header text-center bg-warning text-dark"> ${
+                <div class="card-header text-center bg-warning text-dark"> <b>${
                   element.heading
-                }</div>
+                }</b></div>
                 <div class="card-body">
                     <p class="card-text"> ${element.text} </p>
                     <button id="${index}" data-key="${
@@ -113,20 +113,6 @@ function showNotes() {
   });
 }
 
-// Function to delete a note
-// function deleteNote(index) {
-//   console.log("I am Deleting", index);
-//   let notes = localStorage.getItem("notes");
-//   if (notes == null) {
-//     notesObj = [];
-//   } else {
-//     notesObj = JSON.parse(notes);
-//   }
-
-//   notesObj.splice(index, 1);
-//   localStorage.setItem("notes", JSON.stringify(notesObj));
-//   showNotes();
-// }
 function handleDelete(event) {
   event.stopPropagation(); // Stops the event from propogating
   const key = this.getAttribute("data-key");
