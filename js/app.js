@@ -113,6 +113,20 @@ function showNotes() {
   });
 }
 
+// Function to delete a note
+// function deleteNote(index) {
+//   console.log("I am Deleting", index);
+//   let notes = localStorage.getItem("notes");
+//   if (notes == null) {
+//     notesObj = [];
+//   } else {
+//     notesObj = JSON.parse(notes);
+//   }
+
+//   notesObj.splice(index, 1);
+//   localStorage.setItem("notes", JSON.stringify(notesObj));
+//   showNotes();
+// }
 function handleDelete(event) {
   event.stopPropagation(); // Stops the event from propogating
   const key = this.getAttribute("data-key");
