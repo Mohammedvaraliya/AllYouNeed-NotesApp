@@ -58,26 +58,23 @@ function showNotes() {
   notesObj.forEach(function (element, index, i) {
     html += `<div  class="container my-4" style="width: 344px;">
     
-        <div class="noteCard card text-bg-dark mb-3" title="Click to edit" data-key="${
-          element.date
-        }">
-                <div class="card-header text-center bg-warning text-dark"> <b>${
-                  element.heading
-                }</b></div>
+        <div class="noteCard card text-bg-dark mb-3" title="Click to edit" data-key="${element.date
+      }">
+                <div class="card-header text-center bg-warning text-dark"> <b>${element.heading
+      }</b></div>
                 <div class="card-body">
                     <p class="card-text"> ${element.text} </p>
-                    <button id="${index}" data-key="${
-      element.date
-    }" class="delete-btn btn btn-outline-danger my-2">Delete Note</button>
+                    <button id="${index}" data-key="${element.date
+      }" class="delete-btn btn btn-outline-danger my-2">Delete Note</button>
                 </div>
                 <div class="card-footer text-center text-light bg-secondary">
                     ${(i.value = new Date(element.date).toLocaleTimeString([], {
-                      year: "numeric",
-                      month: "numeric",
-                      day: "numeric",
-                      hour: "2-digit",
-                      minute: "2-digit",
-                    }))}
+        year: "numeric",
+        month: "numeric",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+      }))}
                 </div>
             </div>
             </div>`;
@@ -139,7 +136,7 @@ search.addEventListener("input", function () {
 
   let noteCards = document.getElementsByClassName("noteCard");
   Array.from(noteCards).forEach(function (element) {
-    let cardTxt = element.querySelectorAll("p,h5")[0].innerText;
+    let cardTxt = element.querySelectorAll("p,div")[0].innerText;
 
     if (cardTxt.includes(inputVal)) {
       element.style.display = "block";
