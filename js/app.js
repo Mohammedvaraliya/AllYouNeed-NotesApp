@@ -56,18 +56,18 @@ function showNotes() {
 
   let html = "";
   notesObj.forEach(function (element, index, i) {
-    html += `<div  class="container my-4" style="width: 344px;">
+    html += `<div id="notescard1" class="container my-4" style="width: 344px;">
     
         <div class="noteCard card text-bg-dark mb-3" title="Click to edit" data-key="${element.date
       }">
-                <div class="card-header text-center bg-warning text-dark"> <b>${element.heading
-      }</b></div>
+                <div class="card-header text-center bg-warning text-dark"><b><h4>${element.heading
+      }</h4></b></div>
                 <div class="card-body">
                     <p class="card-text"> ${element.text} </p>
                     <button id="${index}" data-key="${element.date
-      }" class="delete-btn btn btn-outline-danger my-2">Delete Note</button>
+      }" class="delete-btn btn btn-danger my-2">Delete Note</button>
                 </div>
-                <div class="card-footer text-center text-light bg-secondary">
+                <div class="card-footer text-center text-dark bg-light"><b>
                     ${(i.value = new Date(element.date).toLocaleTimeString([], {
         year: "numeric",
         month: "numeric",
@@ -75,7 +75,7 @@ function showNotes() {
         hour: "2-digit",
         minute: "2-digit",
       }))}
-                </div>
+                </b></div>
             </div>
             </div>`;
   });
@@ -84,11 +84,11 @@ function showNotes() {
     notesElm.innerHTML = html;
   } else {
     notesElm.innerHTML = `
-        <div class="container"  style="width: "800";>
+        <div id="notescard2" class="container"  style="width: "800";>
         <div class="card text-light bg-dark mb-3">
-    <div class="card-header text-dark bg-warning"><b>AllYouNeed Notes App! </b>Message For You!</div>
+    <div class="card-header text-dark bg-warning"><h4><b>AllYouNeed Notes App! </b>Message For You!</h4></div>
     <div class="card-body">
-        <p class="card-text"><h3>Nothing to show!</h3><h4><i> Use "Add a Note" section above to add notes.</i></h4> </p>
+        <p class="card-text"><h3>Nothing to show!</h3><h3><i> Use "Add a Note" section above to add notes.</i></h3> </p>
     </div>
     </div>
     </div>

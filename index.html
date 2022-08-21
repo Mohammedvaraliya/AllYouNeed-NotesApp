@@ -14,11 +14,29 @@
 
   <title>AllYouNeed Notes App</title>
   <style>
+    h1 {
+      font-size: 50px;
+      color: aliceblue;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h4 {
+      font-size: 30px;
+      color:black;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
     
+    #notescard1:hover {
+      padding: 3px;
+    }
+
+    #notescard1:hover {
+      padding: 3px;
+    }
   </style>
 </head>
 
-<body style="background-color:rgb(0, 0, 0)";>
+<body style="background-color:rgb(0, 0, 0)" ;>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand ml-4" href="#">AllYouNeed Notes App</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -64,23 +82,26 @@
   <div class="container my-3">
     <h1>Welcome To AllYouNeed Notes App</h1>
     <div class="card my-4">
-      <div class="card-body">
-        <h5 class="card-title">Add a note</h5>
+      <div class="card-body" style="background-color:teal;" ;>
+        <h5 class="card-title"><h4>Add a note</h4></h5>
         <div class="mb-3">
           <input hidden disabled class="hidden-id" type="text" placeholder="Your Heading" />
-          <input type="text" class="form-control my-2" id="headingTxt" placeholder="Your Heading" style="font-weight: bold;" />
+          <input type="text" class="form-control my-2" id="headingTxt" placeholder="Your Heading"
+            style="font-weight: bold;" />
           <textarea class="form-control" id="addTxt" rows="7"></textarea>
         </div>
         <button href="#" class="btn btn-dark" id="addBtn">Add Note</button>
       </div>
     </div>
-
+  </div>
+<div class="container">
     <hr />
     <h1>Your Notes</h1>
     <hr />
-
-    <div id="notes" class="row container-fluid"></div>
+    <div id="notes" class="row container-fluid "></div>
+    
   </div>
+  
 
   <!-- Optional JavaScript; choose one of the two! -->
 
