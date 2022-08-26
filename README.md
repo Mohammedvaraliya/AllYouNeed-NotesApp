@@ -13,10 +13,10 @@ https://allyouneed-notesapp.netlify.app/
 
 # Website overview
 
-![image](https://user-images.githubusercontent.com/95087498/177185768-c0acbbb0-ba24-4350-b273-94166cc7a433.png)
+![image](https://user-images.githubusercontent.com/95087498/186879550-4dfefc86-44a2-4881-920b-933b78168079.png)
 
 
-![image](https://user-images.githubusercontent.com/95087498/177186013-8b1bb37f-436f-4d62-865f-24d01c4e98ca.png)
+![image](https://user-images.githubusercontent.com/95087498/186879462-3270452c-9d83-43e5-926b-fc561e04f78a.png)
 
 
 
